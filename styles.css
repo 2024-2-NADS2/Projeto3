@@ -1,0 +1,473 @@
+/* Estilo Geral */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #FCFFE0;
+    overflow-x: hidden; /* Evita o scroll horizontal */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #FCFFE0;     /* Cor de fundo do cabeçalho */
+    padding: 120px;                /* Espaçamento interno do cabeçalho */
+    margin: 0 auto;                /* Centraliza o cabeçalho horizontalmente */
+    display: flex;                 /* Define o header como flex container */
+    flex-direction: column;        /* Organiza os itens em coluna */
+    justify-content: center;       /* Centraliza verticalmente */
+    align-items: center;           /* Centraliza horizontalmente */
+}
+
+header .logo img {
+    max-width: 300px;              /* Define a largura máxima da imagem da logo */
+    height: auto;                  /* Mantém a proporção da imagem */
+    position: absolute;            /* Posiciona de forma absoluta */
+    top: 0;                        /* Posiciona no topo */
+    left: 50px;                    /* Define a posição da logo à esquerda */
+    padding: 10px;                 /* Espaçamento interno da logo */
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;                  /* Mantém a proporção automática */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 10px;              /* Espaçamento superior para ajustar os links */
+    display: block;                /* Garante que o link ocupe toda a largura */
+}
+
+header nav ul li .queroDoarBtn, 
+header nav ul li .redesaborsolidario, 
+header nav ul li .junteseanos, 
+header nav ul li .contatos {
+    padding: 10px 20px;            /* Padding consistente para todos os botões e links */
+    margin-left: 40px;             /* Margem consistente */
+    color: #000;
+}
+
+header nav ul li .redesaborsolidario {
+    margin-left: 150px;            /* Margem específica para este item */
+}
+
+.queroDoarBtn:hover {
+    background-color: #FF9800;
+    color: #fff;
+    transition: 0.3s;              /* Transição suave */
+    border-radius: 50px;
+}
+
+.redesaborsolidario:hover, 
+.junteseanos:hover, 
+.contatos:hover {
+    color: #4CAF50;                /* Cor ao passar o mouse */
+}
+
+.redesaborsolidario:hover::after, 
+.junteseanos:hover::after, 
+.contatos:hover::after {
+    width: 100%;                   /* Sublinhado completo ao passar o mouse */
+    left: 0;
+    background: #000;              /* Cor do sublinhado */
+}
+
+.redesaborsolidario, 
+.junteseanos, 
+.contatos {
+    color: #000;                   /* Cor inicial */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;   /* Suaviza a transição de cor */
+}
+
+.redesaborsolidario::after, 
+.junteseanos::after, 
+.contatos::after {
+    content: '';                   /* Cria o sublinhado animado */
+    position: absolute;
+    width: 0;                      /* Largura inicial do sublinhado */
+    height: 2px;                   /* Altura do sublinhado */
+    display: block;
+    margin-top: 5px;               /* Espaço entre o texto e o sublinhado */
+    right: 0;                      /* Posiciona à direita */
+    background: #000;              /* Cor do sublinhado */
+    transition: width 0.3s ease;   /* Animação suave do sublinhado */
+}
+
+
+/* Hero Section com Carrossel */
+.hero {
+    text-align: center;
+    padding: 10px;
+    background-color: #FCFFE0;
+}
+
+.hero .slider img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Transição suave */
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px; /* Borda arredondada */
+    margin: 4px 2px; /* Margem */
+    transition: 0.3s; /* Transição suave */
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+
+/* Parte verde que conta os milhoes */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 40px -20px;
+    padding: 80px;
+    background-color: #4CAF50;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    min-height: 400px;
+    position: relative;
+}
+
+.stat-item {
+    flex: 1 1 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 40px;
+    color: #FCFFE0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.stat-item p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: normal;
+    max-width: 300px; /* Limita a largura do texto para quebrar em várias linhas */
+    line-height: 1.5;  /* Aumenta o espaçamento entre linhas para melhorar a legibilidade */
+    margin: 0 auto;    /* Centraliza o texto dentro do contêiner */
+}
+
+/* Ajuste para o rodapé */
+.stat-item2 {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #4CAF50;
+}
+
+/* Ranking Section */
+.ranking {
+    margin: 10px -10px 60px -10px;
+    background-color: #FFA000;
+    padding: 20px;
+    text-align: center;
+}
+
+.ranking h2 {
+    color: white;
+    font-size: 32px; /* Aumenta o tamanho da fonte do título */
+    margin-bottom: 20px;
+}
+
+.ranking table {
+    width: 100%;
+    max-width: 900px; /* Aumenta o limite da largura da tabela */
+    margin: 0 auto; /* Centraliza a tabela */
+    color: white;
+    border-collapse: collapse;
+}
+
+.ranking table tbody tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ranking table tbody tr td {
+    padding: 10px; /* Aumenta o espaçamento interno para dar mais "respiro" */
+    font-size: 22px; /* Aumenta o tamanho da fonte dos textos */
+    font-weight: bold; /* Deixa os textos e números em negrito */
+    display: flex;
+    align-items: center;
+    width: 22%;
+    justify-content: space-between;
+}
+
+.ranking table tbody tr td img {
+    width: 80px; /* Aumenta o tamanho das imagens */
+    height: 80px;
+    margin-right: 15px; /* Aumenta o espaçamento entre a imagem e o texto */
+}
+
+.ranking table tbody tr td span {
+    font-size: 22px; /* Aumenta o tamanho da fonte dos textos dos alimentos */
+    font-weight: bold; /* Deixa os textos em negrito */
+}
+
+.ranking table tfoot td {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid white;
+    font-size: 22px; /* Aumenta o tamanho da fonte do rodapé */
+}
+
+.ranking table tfoot td:first-child {
+    text-align: center; /* Centraliza o "TOTAL:" */
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo dentro da seção */
+    padding: 56px;/* Aumentar o tamanho do quadrado */
+    background-color: #4CAF50;
+    margin: 10px -10px 10px -10px;
+    color: white;
+    text-align: center; /* Centraliza o texto */
+}
+
+.about-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contribuição */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 56px;
+    background-color: #4CAF50;
+    margin: 10px -10px;
+    color: white;
+    text-align: center; /* Centraliza o texto */
+}
+
+.about-content, .about-image {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Seção de Contribuição */
+.contribution-section {
+    background-color: #FCFFE0;
+    padding: 40px 0; /* Espaçamento adequado para a seção */
+}
+
+.contribution-section .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.contribution-section .row {
+    display: flex;
+    justify-content: space-around; /* Alinha os cartões lado a lado */
+    flex-wrap: wrap; /* Permite quebra de linha nos cartões */
+}
+
+.contribution-section .col {
+    flex: 1 1 45%;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contribution-section .card {
+    background-color: #ff9800;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    width: 100%; /* O cartão ocupa toda a largura da coluna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.contribution-section .card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0; /* Bordas arredondadas na parte superior da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.contribution-section .card h3, 
+.contribution-section .card p {
+    color: #FFFFFF;
+}
+
+.contribution-section .card h3 {
+    margin-top: 20px;
+    font-size: 1.5em; /* Tamanho da fonte do título */
+}
+
+.contribution-section .card p {
+    font-size: 1em;
+    line-height: 1.6; /* Espaçamento entre as linhas do parágrafo */
+}
+
+
+/* Footer */
+footer {
+    background-color: #F5E9A5;
+    color: black; /* Mudado de branco para preto para combinar com o texto da imagem */
+    padding: 40px 15px;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    margin: 10px -10px -10px -10px;
+}
+footer img {
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o texto, se necessário */
+}
+
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Define uma largura máxima para limitar o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+footer .about {
+    text-align: left;
+    background-color: #F5E9A5;
+    color: black;
+}
+
+footer .about p, footer .about h3 {
+    margin: 5px 0;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+}
+
+footer .contact-info p, footer .contact-info h3 {
+    margin: 5px 0;
+}
+
+footer .logo-footer {
+    text-align: right; /* Alinha o logo à direita */
+}
+
+footer .logo-footer img {
+    max-width: 250px;
+}
+
+.footer-bottom {
+    background-color: #F5E9A5;
+    color: black;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center; /* Centraliza o texto no rodapé inferior */
+}
+
+.column img {
+    width: 50px; /* Ajuste o valor conforme necessário */
+    height: auto; /* Mantém a proporção do ícone */
+  }
+  
