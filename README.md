@@ -14,7 +14,7 @@
 ## Descrição
 
 <p align="center">
-<img src="Imagens\WhatsApp Image 2024-10-01 at 13.23.18.jpeg" alt="Sabor Solidario" border="0">
+<img src="imagens/rafaela ngc  (2).png" alt="Sabor Solidario" border="0">
     Projeto feito por: Bruna Lira, Deivid Gomes, Isabela Nunes e Rafaela Coelho
 </p>
 
