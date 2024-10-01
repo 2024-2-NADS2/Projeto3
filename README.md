@@ -6,7 +6,7 @@
 
 # Sabor Solidário
 
-## Tech Innovators
+## Grupo 3
 
 ## Integrantes: <a href="https://www.linkedin.com/in/brunacristinalira/">Bruna Cristina Lira</a>, <a href="https://www.linkedin.com/in/deivid-gomes09/">Deivid Gomes </a>, <a href="https://www.linkedin.com/in/isabela-nunes-zeferino/">Isabela Nunes Zeferino </a>, <a href="https://www.linkedin.com/in/rafaela-coelho-bastos-7b8ba61b4/">Rafaela Coelho Bastos</a>
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosseti de Queiroz</a>
@@ -26,7 +26,7 @@ O projeto "Sabor Solidário" visa criar uma plataforma web que conecta empresas 
 
 A plataforma será responsiva, acessível em dispositivos móveis e desktop, com funcionalidades que simplificam o processo de doação, tornando-o rápido e intuitivo. Além disso, o site incluirá informações educativas sobre o impacto do desperdício de alimentos e as maneiras de minimizá-lo, promovendo uma conscientização social.
 <br><br>
-May the force be with you!
+
 <br><br>
 
 ## 🛠 Estrutura de pastas
@@ -64,8 +64,8 @@ Há também 4 pastas que seguem da seguinte forma:
 
 <b>Android:</b>
 
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
+Não há instalação!
+Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
 
 ```sh
 Coloque código do prompt de comnando se for necessário
@@ -73,8 +73,8 @@ Coloque código do prompt de comnando se for necessário
 
 <b>Windows:</b>
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
+Não há instalação!
+Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser)..
 
 ```sh
 Coloque código do prompt de comnando se for necessário
