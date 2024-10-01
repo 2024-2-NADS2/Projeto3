@@ -101,8 +101,9 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 A cada atualização os detalhes devem ser lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
+* 0.2.1 - 01/10/2024
+* * ADD: Adicionamos os arquivos nas suas devidas pastas para entregas 1 e 2.
+    * MUDANÇA: Atualização de docs (ReadMe)
 * 0.2.0 - 15/01/2022
     * MUDANÇA: Remove `setDefaultXYZ()`
     * ADD: Adiciona `init()`
