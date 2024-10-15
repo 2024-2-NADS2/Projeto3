@@ -71,14 +71,25 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 💻 Configuração para Desenvolvimento
  <p> Ferramentas de Desenvolvimento:<p/>
-<p> * Editor de Código: Visual Studio Code e Visual Studio (para trabalhar com C#) <p/>
-<p> * Versionamento de Código: Git para controle de versão, utilizando plataformas como GitHub ou GitLab para colaboração.<p/>
-<p> * Framework Front-end: HTML5, CSS3 e JavaScript. Além disso, considerar o uso de frameworks como Bootstrap para garantir o design responsivo.<p/>
-<p> * Back-end: ASP.NET Core para o desenvolvimento da aplicação em C#.<p/>
-<p> 2. Configuração Local:<p/>
-<p> * Sistema Operacional: Windows, macOS ou Linux (dependendo da preferência).<p/>
-<p> * Node.js: Para gerenciar pacotes JavaScript, se houver necessidade de alguma biblioteca ou framework como React.js no front-end.<p/>
-<p> * Ferramentas de Design: Figma e Canva para o desenvolvimento e planejamento visual do layout da interface.<p/>
+   <p> 1. Editor de Código </p>  
+<p>  Visual Studio Code: Um editor leve e extensível, ideal para o desenvolvimento em JavaScript, HTML e CSS. Ele oferece recursos como autocompletar, integração com Git, e uma vasta gama de extensões que facilitam a programação em React.js e outras tecnologias front-end. <p/>
+<p>  Visual Studio: Ferramenta robusta para desenvolvimento em C#, especialmente útil para o desenvolvimento do back-end com ASP.NET Core. Oferece funcionalidades avançadas como debugging integrado, gerenciamento de pacotes NuGet e suporte para desenvolvimento de APIs.<p/>
+    <p>2. Versionamento de Código</p>
+<p> Git: Sistema de controle de versão distribuído que permite gerenciar alterações no código, colaborar com outros desenvolvedores e rastrear o histórico do projeto.<p/>
+<p> GitHub: Ideal para hospedagem de repositórios, gerenciamento de issues, pull requests e colaboração em equipe. Oferece integração com outras ferramentas como CI/CD.<p/>
+<p> 3. Framework Front-end <p/>
+<p> HTML5: Linguagem de marcação padrão para criar a estrutura do site.<p/>
+<p> CSS3: Usado para estilizar a aplicação, garantindo uma apresentação visual atraente.<p/>
+<p> JavaScript: Linguagem de programação utilizada para tornar o site interativo.<p/>
+<p>4. Back-end</p>
+<p>ASP.NET Core: Framework open-source para construção de aplicações web e APIs em C#. É ideal para o desenvolvimento do back-end do projeto, permitindo que você crie uma API que gerencia doações e interações com a ONG de forma eficiente.</p>
+<p>5. Sistema Operacional</p>
+<p>Windows, macOS ou Linux: O desenvolvimento pode ser realizado em qualquer um desses sistemas, dependendo da preferência da equipe. Ferramentas como Visual Studio e Visual Studio Code são multiplataforma, o que garante flexibilidade.</p>
+<p>6. Node.js</p>
+<p>Node.js: Será utilizado para gerenciar pacotes e bibliotecas JavaScript no front-end, especialmente com o framework React.js. Ele possibilita o uso do npm (Node Package Manager) para instalar pacotes necessários, como o React Router para navegação entre páginas, além de outras bibliotecas úteis no desenvolvimento.</p>
+<p>7. Ferramentas de Design</p>
+<p>Figma: Utilizado para prototipar e planejar visualmente o layout do site antes do desenvolvimento. Ele permite a criação de wireframes, mockups e protótipos interativos que ajudam a visualizar como o site ficará após a implementação.</p>
+<p>Canva: Pode ser utilizado para criar materiais gráficos complementares, como banners, imagens de fundo, ícones e outros elementos visuais que serão incorporados ao site. Ideal para o desenvolvimento de elementos visuais rápidos e simples.</p>
 
 
 
