@@ -62,24 +62,6 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
-<b>Android:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
-<b>Windows:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser)..
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
 <b>HTML:</b>
 
 Não há instalação!
@@ -97,23 +79,6 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 <p> * Ferramentas de Design: Figma e Canva para o desenvolvimento e planejamento visual do layout da interface.<p/>
 
 
-## 🗃 Histórico de lançamentos
-
-A cada atualização os detalhes devem ser lançados aqui.
-
-* 0.2.1 - 01/10/2024
-* * ADD: Adicionamos os arquivos nas suas devidas pastas para entregas 1 e 2.
-    * MUDANÇA: Atualização de docs (ReadMe)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
 
 ## 📋 Licença/License
 <p xmlns:cc="http://creativecommons.org/ns#" >Este trabalho está licenciado sob <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom ;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical -align:texto inferior;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
