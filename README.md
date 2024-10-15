@@ -25,6 +25,8 @@
 O projeto "Sabor Solidário" visa criar uma plataforma web que conecta empresas e indivíduos com alimentos excedentes a instituições e pessoas que enfrentam insegurança alimentar. A proposta é reduzir o desperdício de alimentos, facilitando a doação de itens que ainda estão aptos para consumo, promovendo uma maior eficiência no uso dos recursos alimentares e ajudando quem mais precisa.
 
 A plataforma será responsiva, acessível em dispositivos móveis e desktop, com funcionalidades que simplificam o processo de doação, tornando-o rápido e intuitivo. Além disso, o site incluirá informações educativas sobre o impacto do desperdício de alimentos e as maneiras de minimizá-lo, promovendo uma conscientização social.
+
+Link Figma : https://www.figma.com/design/j4pC2lMTqTk5AlOf6fuSlP/Untitled?node-id=0-1&t=RnJ7I26mfWgrJikd-1
 <br><br>
 
 <br><br>
@@ -89,6 +91,4 @@ Aqui estão as referências usadas no projeto.
 
 1. <https://github.com/iuricode/readme-template>
 2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+
