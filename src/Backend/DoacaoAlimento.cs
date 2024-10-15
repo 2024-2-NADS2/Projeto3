@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-public class Doacao
+public class DoacaoAlimento
 {
     // Atributos
     private string _nomeDoador;
@@ -10,7 +10,7 @@ public class Doacao
     private string _destino;
 
     // Construtor
-    public Doacao(string nomeDoador, string itemDoado, double quantidade, DateTime dataDoacao, string destino)
+    public DoacaoAlimento(string nomeDoador, string itemDoado, double quantidade, DateTime dataDoacao, string destino)
     {
         _nomeDoador = nomeDoador;
         _itemDoado = itemDoado;
@@ -47,7 +47,7 @@ public class Program
     // Método Main - Ponto de entrada do programa
     public static void Main(string[] args)
     {
-        // Exemplo de interação com a classe Doacao
+        // Exemplo de interação com a classe DoacaoAlimento
         Console.WriteLine("Bem-vindo ao Sistema de Doações!");
 
         // Coleta de dados do doador e da doação
@@ -64,7 +64,7 @@ public class Program
         string destino = Console.ReadLine();
 
         // Criando a doação com base nos dados fornecidos
-        Doacao novaDoacao = new Doacao(nomeDoador, itemDoado, quantidade, DateTime.Now, destino);
+        DoacaoAlimento novaDoacao = new DoacaoAlimento(nomeDoador, itemDoado, quantidade, DateTime.Now, destino);
 
         // Exibindo os detalhes da doação
         Console.WriteLine("\nDetalhes da Doação:");
