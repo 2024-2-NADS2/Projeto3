@@ -1,0 +1,163 @@
+public class DoacaoAlimento
+{
+    // Atributos
+    private string _nomeDoador;
+    private string _itemDoado;
+    private double _quantidade;
+    private DateTime _dataDoacao;
+    private string _destino;
+
+    // Construtor
+    public DoacaoAlimento(string nomeDoador, string itemDoado, double quantidade, DateTime dataDoacao, string destino)
+    {
+        _nomeDoador = nomeDoador;
+        _itemDoado = itemDoado;
+        _quantidade = quantidade;
+        _dataDoacao = dataDoacao;
+        _destino = destino;
+    }
+
+    // Métodos Get e Set
+    public string GetNomeDoador() { return _nomeDoador; }
+    public void SetNomeDoador(string nomeDoador) { _nomeDoador = nomeDoador; }
+
+    public string GetItemDoado() { return _itemDoado; }
+    public void SetItemDoado(string itemDoado) { _itemDoado = itemDoado; }
+
+    public double GetQuantidade() { return _quantidade; }
+    public void SetQuantidade(double quantidade) { _quantidade = quantidade; }
+
+    public DateTime GetDataDoacao() { return _dataDoacao; }
+    public void SetDataDoacao(DateTime dataDoacao) { _dataDoacao = dataDoacao; }
+
+    public string GetDestino() { return _destino; }
+    public void SetDestino(string destino) { _destino = destino; }
+
+    // Método para exibir detalhes da doação
+    public void ExibirDetalhes()
+    {
+        Console.WriteLine($"Doador: {_nomeDoador}, Item: {_itemDoado}, Quantidade: {_quantidade}, Data: {_dataDoacao.ToShortDateString()}, Destino: {_destino}");
+    }
+}
+
+public class Calendario
+{
+    private Dictionary<DateTime, string> _agenda; // Armazena a data e a ONG responsável
+
+    // Construtor
+    public Calendario()
+    {
+        _agenda = new Dictionary<DateTime, string>();
+    }
+
+    // Adiciona uma nova data disponível no calendário
+    public void AdicionarDataDisponivel(DateTime data, string ong)
+    {
+        if (!_agenda.ContainsKey(data))
+        {
+            _agenda.Add(data, ong);
+            Console.WriteLine($"Data {data.ToShortDateString()} adicionada com sucesso para a ONG: {ong}.");
+        }
+        else
+        {
+            Console.WriteLine($"Data {data.ToShortDateString()} já está ocupada.");
+        }
+    }
+
+    // Exibe todas as datas disponíveis no calendário
+    public void ExibirDatasDisponiveis()
+    {
+        Console.WriteLine("\nDatas Disponíveis para Doações:");
+        foreach (var item in _agenda)
+        {
+            Console.WriteLine($"Data: {item.Key.ToShortDateString()}, ONG: {item.Value}");
+        }
+    }
+
+    // Verifica se uma data está disponível para doação
+    public bool VerificarDataDisponivel(DateTime data)
+    {
+        return _agenda.ContainsKey(data);
+    }
+}
+
+public class Program
+{
+    // Método Main - Ponto de entrada do programa
+    public static void Main(string[] args)
+    {
+        // Instância do calendário
+        Calendario calendario = new Calendario();
+
+        // Loop de interação com o usuário
+        while (true)
+        {
+            Console.WriteLine("\nEscolha uma opção:");
+            Console.WriteLine("1. Adicionar data disponível (ONG)");
+            Console.WriteLine("2. Ver datas disponíveis");
+            Console.WriteLine("3. Registrar doação");
+            Console.WriteLine("4. Sair");
+
+            int opcao = Convert.ToInt32(Console.ReadLine());
+
+            if (opcao == 1)
+            {
+                // Adicionar data disponível para ONG
+                Console.Write("Nome da ONG: ");
+                string ong = Console.ReadLine();
+
+                Console.Write("Data disponível (formato AAAA-MM-DD): ");
+                DateTime dataDisponivel = DateTime.Parse(Console.ReadLine());
+
+                calendario.AdicionarDataDisponivel(dataDisponivel, ong);
+            }
+            else if (opcao == 2)
+            {
+                // Exibir datas disponíveis
+                calendario.ExibirDatasDisponiveis();
+            }
+            else if (opcao == 3)
+            {
+                // Coleta de dados do doador e da doação
+                Console.Write("Nome do Doador: ");
+                string nomeDoador = Console.ReadLine();
+
+                Console.Write("Item Doado: ");
+                string itemDoado = Console.ReadLine();
+
+                Console.Write("Quantidade: ");
+                double quantidade = Convert.ToDouble(Console.ReadLine());
+
+                // Verifica a disponibilidade de uma data para a doação
+                Console.Write("Escolha uma data para a doação (formato AAAA-MM-DD): ");
+                DateTime dataEscolhida = DateTime.Parse(Console.ReadLine());
+
+                if (calendario.VerificarDataDisponivel(dataEscolhida))
+                {
+                    Console.Write("Destino: ");
+                    string destino = Console.ReadLine();
+
+                    // Criando a doação com base nos dados fornecidos
+                    DoacaoAlimento novaDoacao = new DoacaoAlimento(nomeDoador, itemDoado, quantidade, dataEscolhida, destino);
+
+                    // Exibindo os detalhes da doação
+                    Console.WriteLine("\nDetalhes da Doação:");
+                    novaDoacao.ExibirDetalhes();
+                }
+                else
+                {
+                    Console.WriteLine("A data escolhida não está disponível. Tente outra data.");
+                }
+            }
+            else if (opcao == 4)
+            {
+                Console.WriteLine("Saindo do sistema...");
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Opção inválida. Tente novamente.");
+            }
+        }
+    }
+}
