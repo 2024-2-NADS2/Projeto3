@@ -9,7 +9,8 @@
 ## Grupo 3
 
 ## Integrantes: <a href="https://www.linkedin.com/in/brunacristinalira/">Bruna Cristina Lira</a>, <a href="https://www.linkedin.com/in/deivid-gomes09/">Deivid Gomes </a>, <a href="https://www.linkedin.com/in/isabela-nunes-zeferino/">Isabela Nunes Zeferino </a>, <a href="https://www.linkedin.com/in/rafaela-coelho-bastos-7b8ba61b4/">Rafaela Coelho Bastos</a>
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosseti de Queiroz, Aimar Lopes, Eduardo Savino, Francisco Escobar, José Buesso</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosseti de Queiroz</a> <a>, Aimar Lopes, Eduardo Savino, Francisco Escobar, José Buesso </a>
+
 
 ## Descrição
 
