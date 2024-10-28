@@ -63,6 +63,10 @@ Há também 4 pastas que seguem da seguinte forma:
 
 <b>src</b>: Pasta que contém o código fonte.
 
+## 📄 Protótipo no Figma 
+
+Você pode visualizar o protótipo do projeto [aqui]  https://www.figma.com/design/j4pC2lMTqTk5AlOf6fuSlP/Untitled?node-id=0-1&t=RnJ7I26mfWgrJikd-1
+
 ## ✔ Linguagens e Tecnologias Usadas
 
 <div style="display: flex; align-items: center;">
