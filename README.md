@@ -20,14 +20,12 @@
 </p>
 
 
-
 <br><br>
 
 O projeto "Sabor Solidário" visa criar uma plataforma web que conecta empresas e indivíduos com alimentos excedentes a instituições e pessoas que enfrentam insegurança alimentar. A proposta é reduzir o desperdício de alimentos, facilitando a doação de itens que ainda estão aptos para consumo, promovendo uma maior eficiência no uso dos recursos alimentares e ajudando quem mais precisa.
 
 A plataforma será responsiva, acessível em dispositivos móveis e desktop, com funcionalidades que simplificam o processo de doação, tornando-o rápido e intuitivo. Além disso, o site incluirá informações educativas sobre o impacto do desperdício de alimentos e as maneiras de minimizá-lo, promovendo uma conscientização social.
 
-Link Figma : https://www.figma.com/design/j4pC2lMTqTk5AlOf6fuSlP/Untitled?node-id=0-1&t=RnJ7I26mfWgrJikd-1
 <br><br>
 
 <br><br>
@@ -65,7 +63,8 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 📄 Protótipo no Figma 
 
-Você pode visualizar o protótipo do projeto [aqui]  https://www.figma.com/design/j4pC2lMTqTk5AlOf6fuSlP/Untitled?node-id=0-1&t=RnJ7I26mfWgrJikd-1
+Você pode visualizar o protótipo do projeto [aqui](https://www.figma.com/design/j4pC2lMTqTk5AlOf6fuSlP/Untitled?node-id=0-1&t=RnJ7I26mfWgrJikd-1) para conferir o design e a interação.
+
 
 ## ✔ Linguagens e Tecnologias Usadas
 
