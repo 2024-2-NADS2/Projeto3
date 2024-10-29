@@ -1,0 +1,45 @@
+.sobre-nos {
+  display: flex;
+  flex-direction: column; /* Título em cima */
+  align-items: center; /* Centraliza horizontalmente */
+  padding: 2rem;
+  background-color: #f9f9e4; /* Cor de fundo amarela clara */
+}
+
+.titulo {
+  color: green; /* Cor do texto verde */
+  padding: 0.5rem 1rem; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin-right: 400px;
+}
+
+.sobre-nos-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinha o texto e a imagem no topo */
+  max-width: 80%; /* Ajuste conforme necessário */
+  margin-top: 1rem; /* Espaçamento entre o título e o conteúdo */
+  gap: 1rem; /* Adiciona um espaçamento fixo entre o texto e a imagem */
+}
+
+.sobre-nos-text {
+  max-width: 25%; /* Diminui a largura para quebrar mais o texto */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+  font-size: 1.2rem; /* Aumenta o tamanho da letra */
+  color: green;
+  margin: 0 auto; /* Centraliza o bloco de texto na página */
+  text-align: center; /* Centraliza o texto como um poema */
+}
+
+.sobre-nos-image {
+  border: 50px solid orange; /* Borda laranja de 50px */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 0; /* Remove o espaçamento interno */
+}
+
+
+.sobre-nos-image img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 4px; /* Arredonda as bordas da imagem */
+}
