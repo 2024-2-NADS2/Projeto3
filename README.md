@@ -15,7 +15,7 @@
 ## Descrição
 
 <p align="center">
-<img src="imagens/rafaela ngc  (2).png" alt="Sabor Solidario" border="0">
+<img src="imagens/home%20assets/logo.png" alt="Sabor Solidario" border="0">
     Projeto feito por: Bruna Lira, Deivid Gomes, Isabela Nunes e Rafaela Coelho
 </p>
 
