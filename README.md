@@ -19,7 +19,6 @@
     Projeto feito por: Bruna Lira, Deivid Gomes, Isabela Nunes e Rafaela Coelho
 </p>
 
-
 <br><br>
 
 O projeto "Sabor Solidário" visa criar uma plataforma web que conecta empresas e indivíduos com alimentos excedentes a instituições e pessoas que enfrentam insegurança alimentar. A proposta é reduzir o desperdício de alimentos, facilitando a doação de itens que ainda estão aptos para consumo, promovendo uma maior eficiência no uso dos recursos alimentares e ajudando quem mais precisa.
@@ -126,6 +125,7 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
   <li><b>HTML5</b>: Estrutura o conteúdo da aplicação.</li>
   <li><b>CSS3</b>: Responsável pela estilização.</li>
   <li><b>JavaScript</b>: Linguagem para tornar o site interativo.</li>
+  <li><b>React</b>: Biblioteca JavaScript para criar interfaces de usuário interativas e componentes reutilizáveis. Facilita o desenvolvimento de SPAs (Single Page Applications).</li>
 </ul>
 
 <h4>4. Back-end 🛠️</h4>
@@ -148,8 +148,6 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
   <li><b>Figma</b>: Para prototipagem e layout visual.</li>
   <li><b>Canva</b>: Criação de banners, imagens e ícones adicionais.</li>
 </ul>
-
-
 
 
 ## 📋 Licença/License
