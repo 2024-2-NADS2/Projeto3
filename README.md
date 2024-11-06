@@ -12,7 +12,7 @@
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosseti de Queiroz</a> <a>, Aimar Lopes, Eduardo Savino, Francisco Escobar, José Buesso </a>
 
 
-## Descrição
+## 📖 Descrição
 
 <p align="center">
 <img src="imagens/home%20assets/logo.png" alt="Sabor Solidario" border="0">
@@ -84,27 +84,71 @@ Você pode visualizar o protótipo do projeto [aqui](https://www.figma.com/desig
 Não há instalação!
 Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
 
-## 💻 Configuração para Desenvolvimento
- <p> Ferramentas de Desenvolvimento:<p/>
-   <p> 1. Editor de Código </p>  
-<p>  Visual Studio Code: Um editor leve e extensível, ideal para o desenvolvimento em JavaScript, HTML e CSS. Ele oferece recursos como autocompletar, integração com Git, e uma vasta gama de extensões que facilitam a programação em React.js e outras tecnologias front-end. <p/>
-<p>  Visual Studio: Ferramenta robusta para desenvolvimento em C#, especialmente útil para o desenvolvimento do back-end com ASP.NET Core. Oferece funcionalidades avançadas como debugging integrado, gerenciamento de pacotes NuGet e suporte para desenvolvimento de APIs.<p/>
-    <p>2. Versionamento de Código</p>
-<p> Git: Sistema de controle de versão distribuído que permite gerenciar alterações no código, colaborar com outros desenvolvedores e rastrear o histórico do projeto.<p/>
-<p> GitHub: Ideal para hospedagem de repositórios, gerenciamento de issues, pull requests e colaboração em equipe. Oferece integração com outras ferramentas como CI/CD.<p/>
-<p> 3. Framework Front-end <p/>
-<p> HTML5: Linguagem de marcação padrão para criar a estrutura do site.<p/>
-<p> CSS3: Usado para estilizar a aplicação, garantindo uma apresentação visual atraente.<p/>
-<p> JavaScript: Linguagem de programação utilizada para tornar o site interativo.<p/>
-<p>4. Back-end</p>
-<p>ASP.NET Core: Framework open-source para construção de aplicações web e APIs em C#. É ideal para o desenvolvimento do back-end do projeto, permitindo que você crie uma API que gerencia doações e interações com a ONG de forma eficiente.</p>
-<p>5. Sistema Operacional</p>
-<p>Windows, macOS ou Linux: O desenvolvimento pode ser realizado em qualquer um desses sistemas, dependendo da preferência da equipe. Ferramentas como Visual Studio e Visual Studio Code são multiplataforma, o que garante flexibilidade.</p>
-<p>6. Node.js</p>
-<p>Node.js: Será utilizado para gerenciar pacotes e bibliotecas JavaScript no front-end, especialmente com o framework React.js. Ele possibilita o uso do npm (Node Package Manager) para instalar pacotes necessários, como o React Router para navegação entre páginas, além de outras bibliotecas úteis no desenvolvimento.</p>
-<p>7. Ferramentas de Design</p>
-<p>Figma: Utilizado para prototipar e planejar visualmente o layout do site antes do desenvolvimento. Ele permite a criação de wireframes, mockups e protótipos interativos que ajudam a visualizar como o site ficará após a implementação.</p>
-<p>Canva: Pode ser utilizado para criar materiais gráficos complementares, como banners, imagens de fundo, ícones e outros elementos visuais que serão incorporados ao site. Ideal para o desenvolvimento de elementos visuais rápidos e simples.</p>
+<h2>💻 Configuração para Desenvolvimento</h2>
+
+<h3>🚀 Passo a Passo para Instalar o React</h3>
+<ol>
+  <li><b>Instale o Node.js</b><br>
+    Acesse <a href="https://nodejs.org/" target="_blank">nodejs.org</a> e baixe a versão recomendada para seu sistema operacional. A instalação do Node inclui o npm, o gerenciador de pacotes que você usará para instalar o React.
+  </li>
+  <li><b>Crie seu Projeto em React</b><br>
+    Abra o terminal e navegue até a pasta onde deseja criar o projeto. Execute o comando:
+    <pre><code>npx create-react-app nome-do-projeto</code></pre>
+    Esse comando irá configurar uma estrutura inicial para o seu projeto em React.
+  </li>
+  <li><b>Inicie o Servidor de Desenvolvimento</b><br>
+    Depois que o projeto for criado, entre na pasta do projeto:
+    <pre><code>cd nome-do-projeto</code></pre>
+    Inicie o servidor de desenvolvimento com:
+    <pre><code>npm start</code></pre>
+    O React abrirá automaticamente o projeto no navegador em <code>http://localhost:3000</code>, onde você poderá ver a aplicação funcionando.
+  </li>
+</ol>
+
+<hr>
+
+<h3>🔧 Ferramentas de Desenvolvimento:</h3>
+
+<h4>1. Editor de Código 🖥️</h4>
+<ul>
+  <li><b>Visual Studio Code</b>: Um editor leve e extensível, ideal para desenvolvimento em JavaScript, HTML e CSS. Oferece autocompletar, integração com Git e várias extensões para facilitar a programação em React.js.</li>
+  <li><b>Visual Studio</b>: Mais robusto, ideal para desenvolvimento em C# e ASP.NET Core no back-end. Conta com debugging integrado e suporte a APIs.</li>
+</ul>
+
+<h4>2. Versionamento de Código 🗂️</h4>
+<ul>
+  <li><b>Git</b>: Sistema de controle de versão para gerenciar alterações, colaborar com a equipe e rastrear o histórico do projeto.</li>
+  <li><b>GitHub</b>: Hospedagem de repositórios para gerenciamento de issues, pull requests e colaboração em equipe.</li>
+</ul>
+
+<h4>3. Framework Front-end 🎨</h4>
+<ul>
+  <li><b>HTML5</b>: Estrutura o conteúdo da aplicação.</li>
+  <li><b>CSS3</b>: Responsável pela estilização.</li>
+  <li><b>JavaScript</b>: Linguagem para tornar o site interativo.</li>
+</ul>
+
+<h4>4. Back-end 🛠️</h4>
+<ul>
+  <li><b>ASP.NET Core</b>: Framework open-source para criar APIs em C# e gerenciar interações com a aplicação.</li>
+</ul>
+
+<h4>5. Sistema Operacional 🖥️</h4>
+<ul>
+  <li><b>Windows, macOS ou Linux</b>: A escolha depende da equipe, e as principais ferramentas (como VS Code) são multiplataforma.</li>
+</ul>
+
+<h4>6. Node.js 🛠️</h4>
+<ul>
+  <li><b>Node.js</b>: Essencial para gerenciar pacotes e bibliotecas JavaScript no front-end com React.</li>
+</ul>
+
+<h4>7. Ferramentas de Design 🎨</h4>
+<ul>
+  <li><b>Figma</b>: Para prototipagem e layout visual.</li>
+  <li><b>Canva</b>: Criação de banners, imagens e ícones adicionais.</li>
+</ul>
+
 
 
 
