@@ -27,7 +27,6 @@ A plataforma será responsiva, acessível em dispositivos móveis e desktop, com
 
 <br><br>
 
-<br><br>
 
 ## 🛠 Estrutura de pastas
 
