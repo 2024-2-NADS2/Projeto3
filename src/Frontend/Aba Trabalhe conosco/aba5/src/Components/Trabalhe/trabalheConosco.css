@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+.container {
+  background-color: #FCFFE0;
+  font-family: Arial, sans-serif;
+  color: #28A745;
+  padding: 20px;
+}
+
+.section {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.bold-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #28A745;
+  margin-top: 40px;
+}
+
+.trabalhe-conosco .work-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work-image {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.trabalhe-conosco h2 {
+  color: #28A745;
+  font-size: 32px; 
+  font-weight: bold;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2); 
+  font-family: 'Inter', sans-serif;
+}
+
+.content p {
+  font-size: 16px;
+  color: #075C0A;
+  font-weight: bold;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.email-card, .linkedin-card {
+  background-color: #FFA500;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  color: #FCFFE0;
+  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.email-card:hover, .linkedin-card:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4); 
+}
+
+.email-card h3, .linkedin-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.email-icon, .linkedin-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 5px;
+}
+
+.email-content, .linkedin-card p {
+  font-size: 16px;
+  color: #FCFFE0;
+  margin-top: 15px; 
+}
+
+.chamativo {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #28A745;
+  margin-top: 40px;
+}
+
+.linkedin-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 34px; 
+}
+

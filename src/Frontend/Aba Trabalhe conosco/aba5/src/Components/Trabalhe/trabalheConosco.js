@@ -1,51 +1,53 @@
 import React from "react";
 import "./trabalheConosco.css";
+import email from './email.png';
+import linkedin from './linkedin.png';
+import laptop from './laptop.png';
 
 const TrabalheConosco = () => {
   return (
     <div className="container">
       {/* Seção Trabalhe Conosco */}
       <div className="section trabalhe-conosco">
-        <img
-          src="https://via.placeholder.com/150" // Substitua pela URL da sua imagem
-          alt="Pessoa trabalhando"
-          className="work-image"
-        />
-        <div className="content">
+        <div className="work-content">
           <h2>TRABALHE CONOSCO</h2>
-          <p>
+          <img
+            src={laptop}
+            alt="Pessoa trabalhando"
+            className="work-image"
+          />
+          <p className="bold-text">
             Faça parte da equipe do Sabor Solidário e ajude a construir um
             futuro mais solidário!
           </p>
         </div>
       </div>
 
-      {/* Seção E-mail */}
-      <div className="section email-section">
+      {/* Seção Contato (E-mail e LinkedIn) */}
+      <div className="contact-section">
         <div className="email-card">
-          <i className="email-icon">📧</i>
+          <img src={email} alt="Ícone de E-mail" className="email-icon" />
           <h3>E-MAIL</h3>
           <p>SaborSolidario@gmail.com</p>
-        </div>
-        <div className="email-content">
-          <p>
+          <p className="email-content">
             Se você compartilha desse propósito e quer contribuir com suas
             habilidades, envie seu currículo e uma breve carta de apresentação.
           </p>
         </div>
-      </div>
-
-      {/* Seção LinkedIn */}
-      <div className="section linkedin-section">
-        <h2>O DESAFIO CERTO PARA VOCÊ</h2>
+        
         <div className="linkedin-card">
-          <i className="linkedin-icon">🔗</i>
+          <img src={linkedin} alt="Ícone do LinkedIn" className="linkedin-icon" />
           <h3>CONECTE-SE COM LINKEDIN</h3>
           <p>
             Aqui você pode visualizar as vagas abertas de acordo com seu perfil
             do LinkedIn.
           </p>
         </div>
+      </div>
+
+      {/* Texto chamativo abaixo dos cards */}
+      <div className="chamativo">
+        Venha fazer a diferença com a gente. Junte-se ao Sabor Solidário e ajude a transformar vidas!
       </div>
     </div>
   );
