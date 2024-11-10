@@ -1,0 +1,107 @@
+/* Estilos gerais */
+.footer {
+  background-color: #2f7a3a;
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  color: #000000;
+  margin-top: 24px;
+}
+
+/* Efeito de zoom e links clicáveis apenas para "Sobre nós", "Termos e condições" e "Junte-se a nós" */
+.footer-item.sobre-nos a:hover,
+.footer-item.termos-condicoes a:hover,
+.footer-item.junte-se-nos a:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+
+.footer-item a {
+  color: #000000;
+  text-decoration: none; 
+  display: flex;
+  align-items: center; 
+  font-size: 1em; 
+}
+
+/* Ajustando os ícones do contato, e-mail e rua para ficarem menores */
+.footer-item img.custom-icon {
+  width: 16px; 
+  height: 16px; 
+  transition: transform 0.3s ease; 
+}
+
+/* Estilo do rodapé inferior */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-circle {
+  background-color: #ffffff;
+  border-radius: 50%; 
+  padding: 10px;
+  width: 100px; 
+  height: 100px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-circle img {
+  width: 150%;
+  height: auto;
+  border-radius: 50%; 
+}
+
+/* Estilo do rodapé inferior */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #000000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    align-items: center;
+  }
+
+  .footer-item {
+    margin-top: 12px;
+    gap: 20px; 
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}
