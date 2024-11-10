@@ -1,0 +1,82 @@
+/* Definindo o estilo da fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.container {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  padding: 30px;
+  background-color: #FCFFE0;
+}
+
+.title {
+  font-size: 30px; 
+  color: #4CAF50;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px; 
+}
+
+.buttons {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.buttons p {
+  font-size: 22px; 
+  margin-bottom: 15px; 
+  color: #075C0A; 
+  font-weight: bold;
+}
+
+.input-field {
+  padding: 12px 20px; 
+  border-radius: 8px; 
+  border: 1px solid #ccc;
+  font-size: 18px; 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+.action-button {
+  background-color: #4CAF50;
+  color: #FCFFE0;
+  font-size: 18px; 
+  padding: 15px 30px; 
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-button:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.consult-button {
+  background-color: #FF9800; 
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 10px; 
+}
+
+.consult-button:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.buttons label {
+  font-size: 18px; 
+  margin-top: 10px;
+  display: block; 
+  color: #075C0A; 
+  font-weight: bold;
+}
