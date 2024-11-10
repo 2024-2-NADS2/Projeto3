@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.participar-container {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  background-color: #fcffe0;
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  color: #4caf50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+.descricao {
+  font-size: 1.2rem;
+  color: #075C0A;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Para tornar responsivo */
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Seleciona o primeiro e terceiro card para ajustar o espaçamento do texto */
+.cards-container .card:nth-child(1) p,
+.cards-container .card:nth-child(3) p {
+  font-size: 0.9rem;
+  margin-top: 40px; /* Ajuste conforme necessário */
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Espaçamento entre os cards e a imagem */
+  }
+
+  .button:active {
+    transform: scale(1.1); /* Aumenta o botão em 10% */
+    transition: transform 0.1s ease; /* Suaviza o efeito */
+  }
+  
+
+.card {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease; /* Suavização para o efeito de zoom */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+.button {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  background-color: #e68900;
+}
+
+.voluntario-image {
+  width: 60%;
+  max-width: 500px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-text {
+  font-size: 1.3rem;
+  color: #075C0A;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .descricao {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .voluntario-image {
+    width: 80%;
+  }
+}
