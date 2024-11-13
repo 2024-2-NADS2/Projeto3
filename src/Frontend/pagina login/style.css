@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    height: 100vh;
+    background: #2b8c44 url('1.png') no-repeat center center / cover;
+  }
+  
+  .login-container {
+    text-align: center;
+    color: #fff;
+    margin-right: -35%; /* Ajuste este valor para controlar a posição do container */
+    max-width: 400px; /* Define uma largura máxima para evitar que se estenda demais */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Drop shadow para o título */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 270px;
+    height: 40px;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+  }
+  
+  .forgot-password {
+    margin: 15px 0;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .login-button {
+    width: 270px;
+    height: 45px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #39a25a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Drop shadow para o botão de login */
+  }
+  
+  .register-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .register-link:hover,
+  .forgot-password:hover,
+  .login-button:hover {
+    opacity: 0.9;
+  }
+  
