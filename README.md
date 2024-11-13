@@ -21,10 +21,10 @@
 
 <br><br>
 
-O projeto "Sabor Solidário" visa criar uma plataforma web que conecta empresas e indivíduos com alimentos excedentes a instituições e pessoas que enfrentam insegurança alimentar. A proposta é reduzir o desperdício de alimentos, facilitando a doação de itens que ainda estão aptos para consumo, promovendo uma maior eficiência no uso dos recursos alimentares e ajudando quem mais precisa.
 
-A plataforma será responsiva, acessível em dispositivos móveis e desktop, com funcionalidades que simplificam o processo de doação, tornando-o rápido e intuitivo. Além disso, o site incluirá informações educativas sobre o impacto do desperdício de alimentos e as maneiras de minimizá-lo, promovendo uma conscientização social.
+O projeto "Sabor Solidário" tem como objetivo criar uma plataforma online que facilite o cadastro de ONGs e a conexão entre doadores (empresas e indivíduos) com alimentos excedentes e instituições ou pessoas em situação de insegurança alimentar. A ideia é reduzir o desperdício de alimentos, permitindo que itens ainda aptos para consumo sejam direcionados de forma eficiente a quem mais precisa.
 
+A plataforma será responsiva, funcionando tanto em dispositivos móveis quanto em desktops, e oferecerá recursos que tornam o processo de doação simples, rápido e intuitivo. Além disso, o site permitirá que doadores busquem ONGs por localização geográfica, possibilitando a doação para estados diferentes ou a busca pela ONG mais próxima. Também incluirá conteúdos educativos sobre o impacto do desperdício de alimentos e formas de reduzi-lo, promovendo a conscientização social e a responsabilidade compartilhada.
 <br><br>
 
 
