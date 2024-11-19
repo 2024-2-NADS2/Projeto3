@@ -84,7 +84,7 @@ function Login() {
 const styles = {
     container: {
         display: 'flex',
-        justifyContent: 'flex-end', // Alinha o formulário à direita
+        justifyContent: 'flex-end', 
         alignItems: 'center',
         height: '100vh',
         backgroundImage: `url(${backgroundImage})`,
@@ -95,9 +95,9 @@ const styles = {
         paddingRight: '200px',
     },
     loginContainer: {
-        width: '320px', // Ajuste para o tamanho ideal
+        width: '320px', 
         padding: '20px',
-        marginRight: '50px', // Espaço entre o formulário e a borda da tela
+        marginRight: '50px', 
         borderRadius: '10px',
         color: '#fff',
     },
@@ -119,7 +119,7 @@ const styles = {
         alignSelf: 'flex-start', 
     },
     input: {
-        width: '100%', // Garante que o input ocupe toda a largura disponível
+        width: '100%', 
         marginBottom: '15px',
         padding: '10px',
         borderRadius: '5px',
@@ -130,7 +130,7 @@ const styles = {
         outline: 'none',
     },
     loginButton: {
-        width: '100%', // O botão ocupará toda a largura do contêiner
+        width: '100%', 
         padding: '10px',
         fontSize: '1rem',
         fontWeight: 'bold',
@@ -139,8 +139,8 @@ const styles = {
         border: 'none',
         borderRadius: '5px',
         cursor: 'pointer',
-        marginTop: '15px', // Espaço entre o botão e os elementos acima
-        textAlign: 'center', // Centraliza o texto dentro do botão
+        marginTop: '15px',
+        textAlign: 'center', 
     },
     linksContainer: {
         display: 'flex',
@@ -166,7 +166,7 @@ const styles = {
         marginBottom: '10px',
     },
     success: {
-        color: '#39a25a', // Cor verde para sucesso
+        color: '#39a25a', 
         fontSize: '0.9rem',
         marginBottom: '10px',
         textAlign: 'center',

@@ -2,14 +2,14 @@
 
 public class Doacao
 {
-    // Atributos
+    // atributos
     private string _nomeDoador;
     private string _itemDoado;
     private double _quantidade;
     private DateTime _dataDoacao;
     private string _destino;
 
-    // Construtor
+    // construtor
     public Doacao(string nomeDoador, string itemDoado, double quantidade, DateTime dataDoacao, string destino)
     {
         _nomeDoador = nomeDoador;
@@ -19,7 +19,7 @@ public class Doacao
         _destino = destino;
     }
 
-    // Métodos Get e Set
+    // métodos get e set
     public string GetNomeDoador()
     {
         return _nomeDoador;
@@ -70,7 +70,7 @@ public class Doacao
         _destino = destino;
     }
 
-    // Método para exibir detalhes da doação
+    // método para exibir detalhes da doação
     public void ExibirDetalhes()
     {
         Console.WriteLine($"Doador: {_nomeDoador}, Item: {_itemDoado}, Quantidade: {_quantidade}, Data: {_dataDoacao.ToShortDateString()}, Destino: {_destino}");
@@ -79,13 +79,13 @@ public class Doacao
 
 public class Program
 {
-    // Método Main - Ponto de entrada do programa
+    // método main - ponto de entrada do programa
     public static void Main(string[] args)
     {
-        // Criando uma instância da classe Doacao
+        // criando uma instância da classe Doacao
         Doacao doacao = new Doacao("Eduarda", "Alimentos", 10.5, DateTime.Now, "ONG Sabor Solidário");
 
-        // Exibindo detalhes da doação
+        // exibindo osdetalhes da doação
         doacao.ExibirDetalhes();
     }
 }

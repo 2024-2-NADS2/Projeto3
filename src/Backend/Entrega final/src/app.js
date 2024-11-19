@@ -7,39 +7,39 @@ const ongRoutes = require('./routes/ongRoutes');
 
 const app = express();
 
-// Configuração de CORS
+
 const corsOptions = {
     origin: [
-        'http://localhost:3001', // Para desenvolvimento local
-        'https://frontsaborsolidario.vercel.app', // URL do frontend hospedado
+        'http://localhost:3001', 
+        'https://frontsaborsolidario.vercel.app', 
     ],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos HTTP permitidos
-    allowedHeaders: ['Content-Type', 'Authorization'], // Cabeçalhos permitidos
-    credentials: true, // Permite cookies e autenticação no frontend
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    allowedHeaders: ['Content-Type', 'Authorization'], 
+    credentials: true, 
 };
 app.use(cors(corsOptions));
 
-// Middleware para parse do JSON no body das requisições
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Middleware para log de requisições no servidor
+
 app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
     next();
 });
 
-// Rotas
-app.use('/api', contactRoutes); // Rotas de contato
-app.use('/api/auth', authRoutes); // Rotas de autenticação
-app.use('/api/ongs', ongRoutes); // Rotas de ONG
 
-// Rota para a raiz
+app.use('/api', contactRoutes); 
+app.use('/api/auth', authRoutes); 
+app.use('/api/ongs', ongRoutes); 
+
+
 app.get('/', (req, res) => {
     res.status(200).send('Backend do Sabor Solidário está rodando!');
 });
 
-// Middleware para métodos não permitidos
+
 app.use((req, res, next) => {
     if (!['GET', 'POST', 'PUT', 'DELETE'].includes(req.method)) {
         return res.status(405).json({ error: `Método ${req.method} não permitido.` });
@@ -47,13 +47,13 @@ app.use((req, res, next) => {
     next();
 });
 
-// Middleware para rotas não encontradas
+
 app.use((req, res, next) => {
     console.error(`Rota não encontrada: ${req.method} ${req.originalUrl}`);
     res.status(404).json({ error: 'Rota não encontrada.' });
 });
 
-// Middleware para tratamento de erros genéricos
+
 app.use((err, req, res, next) => {
     console.error('Erro interno do servidor:', err.stack);
     res.status(500).json({ error: 'Erro interno do servidor.' });

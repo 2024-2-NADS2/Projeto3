@@ -1,6 +1,6 @@
 const sqlite3 = require('sqlite3').verbose();
 
-// Configuração do banco de dados com busyTimeout para evitar bloqueios
+
 const db = new sqlite3.Database('sabor_solidario.db', sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE, (err) => {
     if (err) {
         console.error('Erro ao conectar no banco:', err.message);
@@ -9,11 +9,11 @@ const db = new sqlite3.Database('sabor_solidario.db', sqlite3.OPEN_READWRITE | s
     }
 });
 
-// Configura timeout para evitar erros de bloqueio
+
 db.configure('busyTimeout', 5000);
 
 db.serialize(() => {
-    // Criação das tabelas
+
     db.run(`
         CREATE TABLE IF NOT EXISTS usuarios (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -52,7 +52,7 @@ db.serialize(() => {
     });
 });
 
-// Fechar o banco ao encerrar a aplicação para liberar recursos
+
 process.on('SIGINT', () => {
     db.close((err) => {
         if (err) {

@@ -2,10 +2,10 @@ const db = require('../database/dbConfig');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-// Configuração de segredo para JWT
+
 const JWT_SECRET = process.env.JWT_SECRET || 'secretKey';
 
-// Registrar um novo usuário
+
 async function register(req, res) {
     const { nome, email, senha } = req.body;
 
@@ -43,7 +43,7 @@ async function register(req, res) {
     }
 }
 
-// Login de usuário
+
 async function login(req, res) {
     const { email, senha } = req.body;
 
@@ -82,7 +82,7 @@ async function login(req, res) {
     }
 }
 
-// Listar todos os usuários
+
 function getAllUsers(req, res) {
     const sql = `SELECT id, nome, email FROM usuarios`;
     db.all(sql, [], (err, rows) => {
@@ -94,7 +94,7 @@ function getAllUsers(req, res) {
     });
 }
 
-// Atualizar informações de um usuário
+
 async function updateUser(req, res) {
     const { id } = req.params;
     const { nome, email, senha } = req.body;
@@ -128,7 +128,7 @@ async function updateUser(req, res) {
     }
 }
 
-// Remover um usuário
+
 function deleteUser(req, res) {
     const { id } = req.params;
 
@@ -145,7 +145,7 @@ function deleteUser(req, res) {
     });
 }
 
-// Resetar senha de usuário
+
 async function resetPassword(req, res) {
     const { email, novaSenha } = req.body;
 
@@ -183,7 +183,7 @@ async function resetPassword(req, res) {
     }
 }
 
-// Exportar todas as funções
+
 module.exports = {
     register,
     login,

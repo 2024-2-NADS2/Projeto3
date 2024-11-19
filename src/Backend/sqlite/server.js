@@ -6,11 +6,11 @@ const sqlite3 = require('sqlite3').verbose();
 const app = express();
 const PORT = 5000;
 
-// Configuração do CORS para permitir acesso do frontend
+
 app.use(cors());
 app.use(bodyParser.json());
 
-// Conectando ao SQLite
+
 const db = new sqlite3.Database('./sabor_solidario.db', (err) => {
   if (err) {
     console.error('Erro ao abrir o banco de dados', err.message);
@@ -42,7 +42,7 @@ app.post('/api/formulario', (req, res) => {
   });
 });
 
-// Iniciar o servidor
+// Inicia o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });

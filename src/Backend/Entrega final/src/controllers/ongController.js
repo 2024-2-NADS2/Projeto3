@@ -1,16 +1,16 @@
 const db = require('../database/dbConfig');
 
-// Criar uma nova ONG
+
 exports.createOng = (req, res) => {
     const { nome, endereco, estado, horario, cnpj, email, telefone } = req.body;
 
-    // Validação básica
+
     if (!nome || !endereco || !estado || !horario || !cnpj || !email || !telefone) {
         console.error('Erro: Todos os campos são obrigatórios.');
         return res.status(400).json({ error: 'Todos os campos são obrigatórios.' });
     }
 
-    // Validação do formato do CNPJ
+
     const cnpjRegex = /^\d{14}$/;
     if (!cnpjRegex.test(cnpj)) {
         console.error('Erro: CNPJ inválido.');
@@ -38,7 +38,7 @@ exports.createOng = (req, res) => {
     });
 };
 
-// Listar todas as ONGs
+
 exports.getAllOngs = (req, res) => {
     const sql = 'SELECT * FROM ongs';
     db.all(sql, [], (err, rows) => {
@@ -51,7 +51,7 @@ exports.getAllOngs = (req, res) => {
     });
 };
 
-// Consultar uma ONG pelo CNPJ
+
 exports.getOngByCnpj = (req, res) => {
     const { cnpj } = req.params;
 
@@ -81,7 +81,7 @@ exports.getOngByCnpj = (req, res) => {
     });
 };
 
-// Remover uma ONG pelo CNPJ
+
 exports.deleteOng = (req, res) => {
     const { cnpj } = req.params;
 
@@ -105,7 +105,7 @@ exports.deleteOng = (req, res) => {
     });
 };
 
-// Atualizar informações de uma ONG
+
 exports.updateOng = (req, res) => {
     const { cnpj } = req.params;
     const { nome, endereco, estado, horario, email, telefone } = req.body;

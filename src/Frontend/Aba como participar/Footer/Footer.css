@@ -29,7 +29,7 @@
   margin-top: 24px;
 }
 
-/* Efeito de zoom e links clicáveis apenas para "Sobre nós", "Termos e condições" e "Junte-se a nós" */
+
 .footer-item.sobre-nos a:hover,
 .footer-item.termos-condicoes a:hover,
 .footer-item.junte-se-nos a:hover {

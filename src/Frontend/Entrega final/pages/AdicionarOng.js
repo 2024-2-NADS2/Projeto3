@@ -13,7 +13,7 @@ function AdicionarOng({ onNewOng }) {
   });
 
   const [errors, setErrors] = useState({});
-  const [message, setMessage] = useState(''); // Novo estado para mensagens de sucesso
+  const [message, setMessage] = useState(''); 
   const [loading, setLoading] = useState(false);
 
   const estados = [

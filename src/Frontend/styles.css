@@ -10,28 +10,28 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #FCFFE0;     /* Cor de fundo do cabeçalho */
-    padding: 120px;                /* Espaçamento interno do cabeçalho */
-    margin: 0 auto;                /* Centraliza o cabeçalho horizontalmente */
-    display: flex;                 /* Define o header como flex container */
-    flex-direction: column;        /* Organiza os itens em coluna */
-    justify-content: center;       /* Centraliza verticalmente */
-    align-items: center;           /* Centraliza horizontalmente */
+    background-color: #FCFFE0;     
+    padding: 120px;                
+    margin: 0 auto;                
+    display: flex;                 
+    flex-direction: column;        
+    justify-content: center;       
+    align-items: center;           
 }
 
 header .logo img {
-    max-width: 300px;              /* Define a largura máxima da imagem da logo */
-    height: auto;                  /* Mantém a proporção da imagem */
-    position: absolute;            /* Posiciona de forma absoluta */
-    top: 0;                        /* Posiciona no topo */
-    left: 50px;                    /* Define a posição da logo à esquerda */
-    padding: 10px;                 /* Espaçamento interno da logo */
+    max-width: 300px;              
+    height: auto;                  
+    position: absolute;            
+    top: 0;                        
+    left: 50px;                    
+    padding: 10px;                 
 }
 
 header nav {
     display: flex;
     justify-content: flex-end;
-    height: auto;                  /* Mantém a proporção automática */
+    height: auto;                  
 }
 
 header nav ul {
@@ -48,69 +48,68 @@ header nav ul li a {
     text-decoration: none;
     font-weight: lighter;
     font-size: 20px;
-    margin-top: 10px;              /* Espaçamento superior para ajustar os links */
-    display: block;                /* Garante que o link ocupe toda a largura */
+    margin-top: 10px;              
+    display: block;                
 }
 
 header nav ul li .queroDoarBtn, 
 header nav ul li .redesaborsolidario, 
 header nav ul li .junteseanos, 
 header nav ul li .contatos {
-    padding: 10px 20px;            /* Padding consistente para todos os botões e links */
-    margin-left: 40px;             /* Margem consistente */
+    padding: 10px 20px;            
+    margin-left: 40px;             
     color: #000;
 }
 
 header nav ul li .redesaborsolidario {
-    margin-left: 150px;            /* Margem específica para este item */
+    margin-left: 150px;            
 }
 
 .queroDoarBtn:hover {
     background-color: #FF9800;
     color: #fff;
-    transition: 0.3s;              /* Transição suave */
+    transition: 0.3s;              
     border-radius: 50px;
 }
 
 .redesaborsolidario:hover, 
 .junteseanos:hover, 
 .contatos:hover {
-    color: #4CAF50;                /* Cor ao passar o mouse */
+    color: #4CAF50;               
 }
 
 .redesaborsolidario:hover::after, 
 .junteseanos:hover::after, 
 .contatos:hover::after {
-    width: 100%;                   /* Sublinhado completo ao passar o mouse */
+    width: 100%;                   
     left: 0;
-    background: #000;              /* Cor do sublinhado */
+    background: #000;             
 }
 
 .redesaborsolidario, 
 .junteseanos, 
 .contatos {
-    color: #000;                   /* Cor inicial */
+    color: #000;                  
     text-decoration: none;
     position: relative;
-    transition: color 0.3s ease;   /* Suaviza a transição de cor */
-}
+    transition: color 0.3s ease;   }
 
 .redesaborsolidario::after, 
 .junteseanos::after, 
 .contatos::after {
-    content: '';                   /* Cria o sublinhado animado */
+    content: '';                   
     position: absolute;
-    width: 0;                      /* Largura inicial do sublinhado */
-    height: 2px;                   /* Altura do sublinhado */
+    width: 0;                      
+    height: 2px;                   
     display: block;
-    margin-top: 5px;               /* Espaço entre o texto e o sublinhado */
-    right: 0;                      /* Posiciona à direita */
-    background: #000;              /* Cor do sublinhado */
-    transition: width 0.3s ease;   /* Animação suave do sublinhado */
+    margin-top: 5px;               
+    right: 0;                      
+    background: #000;             
+    transition: width 0.3s ease;   
 }
 
 
-/* Hero Section com Carrossel */
+
 .hero {
     text-align: center;
     padding: 10px;
@@ -162,10 +161,10 @@ header nav ul li .redesaborsolidario {
     cursor: pointer;
     font-size: 18px;
     z-index: 10;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-    border-radius: 10px; /* Borda arredondada */
-    margin: 4px 2px; /* Margem */
-    transition: 0.3s; /* Transição suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    margin: 4px 2px; 
+    transition: 0.3s; 
 }
 
 .carousel-button.prev {
@@ -182,7 +181,7 @@ header nav ul li .redesaborsolidario {
 }
 
 
-/* Parte verde que conta os milhoes */
+
 .stats {
     display: flex;
     justify-content: space-between;
@@ -216,12 +215,12 @@ header nav ul li .redesaborsolidario {
     color: #fff;
     margin-top: 10px;
     font-weight: normal;
-    max-width: 300px; /* Limita a largura do texto para quebrar em várias linhas */
-    line-height: 1.5;  /* Aumenta o espaçamento entre linhas para melhorar a legibilidade */
-    margin: 0 auto;    /* Centraliza o texto dentro do contêiner */
+    max-width: 300px; 
+    line-height: 1.5;  
+    margin: 0 auto;    
 }
 
-/* Ajuste para o rodapé */
+
 .stat-item2 {
     flex: 1 1 100%;
     text-align: center;
@@ -236,7 +235,7 @@ header nav ul li .redesaborsolidario {
     background-color: #4CAF50;
 }
 
-/* Ranking Section */
+
 .ranking {
     margin: 10px -10px 60px -10px;
     background-color: #FFA000;
@@ -246,14 +245,14 @@ header nav ul li .redesaborsolidario {
 
 .ranking h2 {
     color: white;
-    font-size: 32px; /* Aumenta o tamanho da fonte do título */
+    font-size: 32px; 
     margin-bottom: 20px;
 }
 
 .ranking table {
     width: 100%;
-    max-width: 900px; /* Aumenta o limite da largura da tabela */
-    margin: 0 auto; /* Centraliza a tabela */
+    max-width: 900px; 
+    margin: 0 auto; 
     color: white;
     border-collapse: collapse;
 }
@@ -265,9 +264,9 @@ header nav ul li .redesaborsolidario {
 }
 
 .ranking table tbody tr td {
-    padding: 10px; /* Aumenta o espaçamento interno para dar mais "respiro" */
-    font-size: 22px; /* Aumenta o tamanho da fonte dos textos */
-    font-weight: bold; /* Deixa os textos e números em negrito */
+    padding: 10px;
+    font-size: 22px; 
+    font-weight: bold; 
     display: flex;
     align-items: center;
     width: 22%;
@@ -275,14 +274,14 @@ header nav ul li .redesaborsolidario {
 }
 
 .ranking table tbody tr td img {
-    width: 80px; /* Aumenta o tamanho das imagens */
+    width: 80px; 
     height: 80px;
-    margin-right: 15px; /* Aumenta o espaçamento entre a imagem e o texto */
+    margin-right: 15px; 
 }
 
 .ranking table tbody tr td span {
-    font-size: 22px; /* Aumenta o tamanho da fonte dos textos dos alimentos */
-    font-weight: bold; /* Deixa os textos em negrito */
+    font-size: 22px; 
+    font-weight: bold; 
 }
 
 .ranking table tfoot td {
@@ -290,23 +289,23 @@ header nav ul li .redesaborsolidario {
     text-align: center;
     padding-top: 20px;
     border-top: 2px solid white;
-    font-size: 22px; /* Aumenta o tamanho da fonte do rodapé */
+    font-size: 22px; 
 }
 
 .ranking table tfoot td:first-child {
-    text-align: center; /* Centraliza o "TOTAL:" */
+    text-align: center; 
 }
 
-/* About Section */
+
 .about {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza o conteúdo dentro da seção */
-    padding: 56px;/* Aumentar o tamanho do quadrado */
+    justify-content: center; 
+    padding: 56px;
     background-color: #4CAF50;
     margin: 10px -10px 10px -10px;
     color: white;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 .about-content {
@@ -325,16 +324,16 @@ header nav ul li .redesaborsolidario {
     border-radius: 8px;
 }
 
-/* Contribuição */
+
 .about {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza o conteúdo */
+    justify-content: center; 
     padding: 56px;
     background-color: #4CAF50;
     margin: 10px -10px;
     color: white;
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
 }
 
 .about-content, .about-image {
@@ -348,21 +347,21 @@ header nav ul li .redesaborsolidario {
     border-radius: 8px;
 }
 
-/* Seção de Contribuição */
+
 .contribution-section {
     background-color: #FCFFE0;
-    padding: 40px 0; /* Espaçamento adequado para a seção */
+    padding: 40px 0; 
 }
 
 .contribution-section .container {
     max-width: 1200px;
-    margin: 0 auto; /* Centraliza a seção */
+    margin: 0 auto; 
 }
 
 .contribution-section .row {
     display: flex;
-    justify-content: space-around; /* Alinha os cartões lado a lado */
-    flex-wrap: wrap; /* Permite quebra de linha nos cartões */
+    justify-content: space-around; 
+    flex-wrap: wrap; 
 }
 
 .contribution-section .col {
@@ -377,14 +376,14 @@ header nav ul li .redesaborsolidario {
     padding: 20px;
     border-radius: 50px;
     text-align: center;
-    width: 100%; /* O cartão ocupa toda a largura da coluna */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .contribution-section .card img {
     max-width: 100%;
-    border-radius: 10px 10px 0 0; /* Bordas arredondadas na parte superior da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px 10px 0 0; 
+    height: auto; 
 }
 
 .contribution-section .card h3, 
@@ -394,19 +393,19 @@ header nav ul li .redesaborsolidario {
 
 .contribution-section .card h3 {
     margin-top: 20px;
-    font-size: 1.5em; /* Tamanho da fonte do título */
+    font-size: 1.5em; 
 }
 
 .contribution-section .card p {
     font-size: 1em;
-    line-height: 1.6; /* Espaçamento entre as linhas do parágrafo */
+    line-height: 1.6; 
 }
 
 
-/* Footer */
+
 footer {
     background-color: #F5E9A5;
-    color: black; /* Mudado de branco para preto para combinar com o texto da imagem */
+    color: black; 
     padding: 40px 15px;
     text-align: center;
     height: 100%;
@@ -414,9 +413,9 @@ footer {
     margin: 10px -10px -10px -10px;
 }
 footer img {
-    max-width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-right: 10px; /* Espaço entre a imagem e o texto, se necessário */
+    max-width: 100px; 
+    height: auto; 
+    margin-right: 10px; 
 }
 
 
@@ -425,8 +424,8 @@ footer .footer-content {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px; /* Define uma largura máxima para limitar o conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 footer .about {
@@ -442,7 +441,7 @@ footer .about p, footer .about h3 {
 footer .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: flex-start; 
 }
 
 footer .contact-info p, footer .contact-info h3 {
@@ -450,7 +449,7 @@ footer .contact-info p, footer .contact-info h3 {
 }
 
 footer .logo-footer {
-    text-align: right; /* Alinha o logo à direita */
+    text-align: right; 
 }
 
 footer .logo-footer img {
@@ -463,11 +462,11 @@ footer .logo-footer img {
     padding: 10px 0;
     margin-top: 20px;
     font-size: 14px;
-    text-align: center; /* Centraliza o texto no rodapé inferior */
+    text-align: center; 
 }
 
 .column img {
-    width: 50px; /* Ajuste o valor conforme necessário */
-    height: auto; /* Mantém a proporção do ícone */
+    width: 50px; 
+    height: auto; 
   }
   

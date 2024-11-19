@@ -80,7 +80,7 @@ const Termo = () => {
 
 const styles = {
   pageBackground: {
-    backgroundColor: '#f9f9e4', // Cor de fundo amarelo claro para toda a página
+    backgroundColor: '#f9f9e4', 
     minHeight: '100vh',
     padding: '20px 0',
   },
@@ -88,7 +88,7 @@ const styles = {
     padding: '40px',
     maxWidth: '800px',
     margin: '0 auto',
-    backgroundColor: '#f9f9e4', // Cor de fundo amarelo claro para o conteúdo
+    backgroundColor: '#f9f9e4', 
     borderRadius: '8px',
     fontFamily: 'Arial, sans-serif',
   },

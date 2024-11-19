@@ -42,10 +42,10 @@ form {
 
 label {
   font-size: 14px;
-  color: #075C0A; /* Cor para os rótulos (negrito e verde escuro) */
+  color: #075C0A; 
   margin-bottom: 6px;
   display: block;
-  font-weight: bold; /* Negrito nos rótulos */
+  font-weight: bold;
 }
 
 input,
@@ -93,8 +93,8 @@ button:hover {
 input#cnpj + label,
 input#email + label,
 input#telefone + label {
-  color: #075C0A; /* Cor para os nomes dos campos (negrito e verde escuro) */
-  font-weight: bold; /* Fonte em negrito */
+  color: #075C0A; 
+  font-weight: bold; 
 }
 
 @media (max-width: 768px) {
