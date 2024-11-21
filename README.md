@@ -27,6 +27,8 @@ O projeto "Sabor Solidário" tem como objetivo criar uma plataforma online que f
 A plataforma será responsiva, funcionando tanto em dispositivos móveis quanto em desktops, e oferecerá recursos que tornam o processo de doação simples, rápido e intuitivo. Além disso, o site permitirá que doadores busquem ONGs por localização geográfica, possibilitando a doação para estados diferentes ou a busca pela ONG mais próxima. Também incluirá conteúdos educativos sobre o impacto do desperdício de alimentos e formas de reduzi-lo, promovendo a conscientização social e a responsabilidade compartilhada.
 <br><br>
 
+Link do site: https://frontsaborsolidario.vercel.app/
+
 
 ## 🛠 Estrutura de pastas
 
